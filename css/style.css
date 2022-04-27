@@ -1,0 +1,80 @@
+:root{
+    --main-color: #6eb930;
+    --padding: 100px
+}
+
+span{
+    color: var(--main-color)
+}
+
+body{
+    text-transform: capitalize;
+}
+
+a{
+    color: white !important
+}
+
+.header{
+    height: 100vh;
+    background: linear-gradient(86deg, rgb(29 177 236 / 21%), rgb(91 14 214 / 52%) 100%), url(../images/head.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 76%, 0 100%);
+}
+
+.navbar{
+    z-index: 1000;
+    box-shadow: none !important;
+}
+
+.navbar a:hover{
+    color: var(--main-color) !important
+}
+
+.text-title .btn,
+.services .text .btn{
+    background-color: var(--main-color) !important
+}
+
+.text-title h1{
+    font-size: 50px!important
+}
+
+/* end header */
+
+/*  start services */
+.services{
+    height: 90vh;
+}
+
+.services .cards .box{
+    box-shadow:   0px 5px 20px 0px #c2c6ce;
+}
+
+/* end services*/
+
+/* start story */
+.story{
+    height: 100vh;
+    background: linear-gradient(86deg, rgb(29 177 236 / 21%), rgb(91 14 214 / 52%) 100%), url(../images/story.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 23%, 100% 0%, 100% 76%, 0 100%);
+}
+.story .icon{
+    width: 100px;
+    height: 100px;
+}
+
+.story .icon i{
+    color: var(--main-color)
+}
+/* end story */
+
+/* start skills */
+.skills{
+    height: 100vh;
+}
+
+/* end skills */
