@@ -7,6 +7,10 @@ span{
     color: var(--main-color)
 }
 
+ul{
+    list-style: none;
+}
+
 body{
     text-transform: capitalize;
 }
@@ -45,7 +49,7 @@ a{
 
 /*  start services */
 .services{
-    height: 90vh;
+    height: 100vh;
 }
 
 .services .cards .box{
@@ -73,8 +77,30 @@ a{
 /* end story */
 
 /* start skills */
-.skills{
-    height: 100vh;
+/* =============================================================================================== 
+ end skills */
+
+/* start portfolio */
+.portfolio{
+    height: 130vh;
+}
+.portfolio ul li{
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-/* end skills */
+.portfolio ul li:hover,
+.portfolio ul li.active{
+    color: var(--main-color)
+}
+.portfolio .row,
+.portfolio .box{
+    padding: 0!important;
+}
+
+.portfolio .box img{
+    width: 100%;
+}
+
+/* end portfolio */
+
