@@ -1,3 +1,10 @@
+// Aos 
+    AOS.init({
+        duration: 1000,
+    });
+
+///////////////////////////////////////////////////////
+
 let list = document.querySelectorAll('.portfolio li');
 let box = Array.from(document.querySelectorAll('.portfolio .box'));
 
@@ -21,3 +28,6 @@ function hideCard(){
         })
     })
 }
+
+
+
