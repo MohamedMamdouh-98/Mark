@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Geostar&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wallpoet&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
 :root{
-    --main-color: #6eb930;
+    --main-color: #2095fb;
     --bg-footer: #3f008b;
     --padding: 100px
 }
@@ -11,15 +12,22 @@ span{
 ul{
     list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     text-transform: capitalize;
+    font-family: 'Cairo', sans-serif !important;
 }
 
 a{
     color: white !important
 }
 
+button{
+    padding: 12px 27px !important;
+}
 .header{
     height: 100vh;
     background: linear-gradient(86deg, rgb(29 177 236 / 21%), rgb(91 14 214 / 52%) 100%), url(../images/head.jpg);
@@ -29,10 +37,25 @@ a{
 }
 
 .navbar{
-    z-index: 1000;
     box-shadow: none !important;
+    background-color: #ffffff49;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
 }
-
+.nav{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0!important;
+    background-color: #2be6d0f1;
+    transition: 0.3s;
+    z-index: 100000;
+    box-shadow: 1px -1px 4px 3px #cccccc63 !important;
+    color: var(--main-color)!important;
+}
 .navbar a:hover{
     color: var(--main-color) !important
 }
@@ -54,7 +77,7 @@ a{
 }
 
 .services .cards .box{
-    box-shadow:   0px 5px 20px 0px #c2c6ce;
+    box-shadow: 0px 0px 5px 0px #c2c6ce6e;
 }
 
 /* end services*/
@@ -90,19 +113,19 @@ a{
     overflow: hidden;
 }
 .circle.per-75 {
-    background-image: conic-gradient(#0088bd 75%, #ccc 0);
+    background-image: conic-gradient(#04d1e4 75%, #e2e2e261 0);
 }
 
 .circle.per-70 {
-    background-image: conic-gradient(#0088bd 70%, #ccc 0);
+    background-image: conic-gradient(#04d1e4 70%, #e2e2e261 0);
 }
 
 .circle.per-90 {
-    background-image: conic-gradient(#0088bd 90%, #ccc 0);
+    background-image: conic-gradient(#04d1e4 90%, #e2e2e261 0);
 }
 
 .circle.per-60 {
-    background-image: conic-gradient(#0088bd 60%, #ccc 0);
+    background-image: conic-gradient(#04d1e4 60%, #e2e2e261 0);
 }
 
 .circle .inner {
@@ -167,7 +190,7 @@ a{
 }
 
 .reviews .me{
-    background-color: #eeeeee;
+    background-color: #eeeeee4d;
     min-height: 100px;
     display: flex;
     align-items: center; 

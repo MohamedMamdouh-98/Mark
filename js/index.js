@@ -2,6 +2,16 @@
     AOS.init({
         duration: 1000,
     });
+
+let nav = document.getElementById('nav');
+window.onscroll = function(){
+    if(scrollY >= 200){
+        nav.classList.add('nav')
+    }else{
+        nav.classList.remove('nav') 
+    }
+}
+
     // start portfolio
     $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
@@ -20,7 +30,4 @@
         columnWidth: ".all"
         }
     })
-
-
-
 
