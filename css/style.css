@@ -90,15 +90,15 @@ a{
     overflow: hidden;
 }
 .circle.per-75 {
-    background-image: conic-gradient(#af2937 75%, #ccc 0);
+    background-image: conic-gradient(#0088bd 75%, #ccc 0);
 }
 
 .circle.per-70 {
-    background-image: conic-gradient(#4a006f 70%, #ccc 0);
+    background-image: conic-gradient(#0088bd 70%, #ccc 0);
 }
 
 .circle.per-90 {
-    background-image: conic-gradient(#0442d2 90%, #ccc 0);
+    background-image: conic-gradient(#0088bd 90%, #ccc 0);
 }
 
 .circle.per-60 {
@@ -113,42 +113,44 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     background: #fff;
     border-radius: 50%;
-    font-size: 1.85em;
+    font-size: 20px;
     color: black;
 }
  /* end skills */
-
 /* start portfolio */
 .portfolio{
     min-height: 100vh;
+    padding: 70px 0;
 }
 .portfolio ul li{
     transition: 0.2s;
     cursor: pointer;
 }
-
 .portfolio ul li:hover,
 .portfolio ul li.active{
     color: var(--main-color)
 }
-.portfolio .row,
-.portfolio .box{
-    padding: 0!important;
-}
 
-.portfolio .box img{
+.portfolio img{
     width: 100%;
+    height: 100%;
 }
 
+.portfolio .item{
+    overflow: hidden;
+    border-radius: 6px;
+}
+.portfolio .item-1,
+.portfolio .item-3,
+.portfolio .item-5{
+    height: 400px!important;
+}
 /* end portfolio */
-
 /* start reviews */
-.reviews{
-}
 .reviews .main-box{
     box-shadow: 0px 0px 20px 2px #e0e0e0;
 }
@@ -175,7 +177,6 @@ a{
 }
 /*end reviews*/ 
 /* start footer */ 
-
 .footer{
     background: linear-gradient(86deg, rgba(3, 73, 139, 0.72), rgba(91, 14, 214, 0.846) 100%);
     min-height: 300px;
@@ -210,14 +211,14 @@ a{
 .footer .contact{
     position: relative;
 }
-.footer .contact::after{
+.footer .contact::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     border-radius: 20px;
     background-color: #ccc;
-    top: 0;
+    bottom: 0;
     left: 0;
 }
 
@@ -229,5 +230,8 @@ a{
 .contact i:hover{
     color: var(--main-color);
     border-color: var(--main-color)!important;
+}
+.copy{
+    background: linear-gradient(86deg, rgba(3, 73, 139, 0.72), rgba(91, 14, 214, 0.846) 100%);
 }
 /* end footer */ 

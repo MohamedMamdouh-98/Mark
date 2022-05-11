@@ -2,32 +2,25 @@
     AOS.init({
         duration: 1000,
     });
-
-///////////////////////////////////////////////////////
-
-let list = document.querySelectorAll('.portfolio li');
-let box = Array.from(document.querySelectorAll('.portfolio .box'));
-
-list.forEach((li) =>{
-    li.addEventListener('click', removeAct)
-    li.addEventListener('click', hideCard)
-})
-//remove class active
-function removeAct(){
-    list.forEach((li) =>{
-        li.classList.remove('active')
-        this.classList.add('active')
-    })
-}
-//hide in cards
-function hideCard(){
-    box.forEach((img) =>{
-        img.style.display = 'none';
-        document.querySelectorAll(this.dataset.filter).forEach((e) =>{
-            e.style.display = 'flex';
+    // start portfolio
+    $('.filters ul li').click(function(){
+        $('.filters ul li').removeClass('active');
+        $(this).addClass('active');
+        
+        var data = $(this).attr('data-filter');
+        $grid.isotope({
+        filter: data
         })
+    });
+    
+    var $grid = $(".grid").isotope({
+        itemSelector: ".all",
+        percentPosition: true,
+        masonry: {
+        columnWidth: ".all"
+        }
     })
-}
+
 
 
 
