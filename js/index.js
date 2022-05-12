@@ -30,4 +30,32 @@ window.onscroll = function(){
         columnWidth: ".all"
         }
     })
-
+// OwlCarousel2 slider box
+var owl = $('.clients-carousel');
+owl.owlCarousel({
+    loop: true,
+    nav: false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    animateOut:'fadeOut',
+    animateIn:'fadeIn',
+    smartSpeed: 450,
+    margin: 20,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        991: {
+            items: 3
+        },
+        1200: {
+            items: 3
+        },
+        1920: {
+            items: 3
+        },
+    }
+});

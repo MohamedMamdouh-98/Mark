@@ -28,6 +28,7 @@ a{
 button{
     padding: 12px 27px !important;
 }
+
 .header{
     height: 100vh;
     background: linear-gradient(86deg, rgb(29 177 236 / 21%), rgb(91 14 214 / 52%) 100%), url(../images/head.jpg);
@@ -45,30 +46,31 @@ button{
     right: 0;
     z-index: 1000000;
 }
+
 .nav{
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0!important;
-    background-color: #2be6d0f1;
     transition: 0.3s;
     z-index: 100000;
     box-shadow: 1px -1px 4px 3px #cccccc63 !important;
     color: var(--main-color)!important;
+    background: linear-gradient(30deg, #ffffff, #d48af9, #e912bab1);    
 }
+
 .navbar a:hover{
     color: var(--main-color) !important
 }
 
 .text-title .btn,
 .services .text .btn{
-    background-color: var(--main-color) !important
+    background: linear-gradient(30deg, #0052D4, #0ea1f6) !important
 }
 
 .text-title h1{
     font-size: 50px!important
 }
-
 /* end header */
 
 /*  start services */
@@ -79,7 +81,6 @@ button{
 .services .cards .box{
     box-shadow: 0px 0px 5px 0px #c2c6ce6e;
 }
-
 /* end services*/
 
 /* start story */
@@ -96,7 +97,7 @@ button{
 }
 
 .story .icon i{
-    color: var(--main-color)
+    color: var(--main-color)!important
 }
 /* end story */
 
@@ -113,21 +114,21 @@ button{
     overflow: hidden;
 }
 .circle.per-75 {
-    background-image: conic-gradient(#04d1e4 75%, #e2e2e261 0);
+    background-image: conic-gradient(#03cfe2, #eb81f3 75%, #e2e2e261 0);
 }
 
 .circle.per-70 {
-    background-image: conic-gradient(#04d1e4 70%, #e2e2e261 0);
+    background-image: conic-gradient(#03cfe2, #eb81f3 70%, #e2e2e261 0);
 }
 
 .circle.per-90 {
-    background-image: conic-gradient(#04d1e4 90%, #e2e2e261 0);
+    background-image: conic-gradient(#03cfe2, #eb81f3 90%, #e2e2e261 0);
 }
 
 .circle.per-60 {
-    background-image: conic-gradient(#04d1e4 60%, #e2e2e261 0);
+    background-image: conic-gradient(#03cfe2, #eb81f3 60%, #e2e2e261 0);
 }
-
+/*linear-gradient(30deg, #0052D4, #0ea1f6)*/
 .circle .inner {
     display: flex;
     justify-content: center;
@@ -173,20 +174,28 @@ button{
     height: 400px!important;
 }
 /* end portfolio */
+
 /* start reviews */
-.reviews .main-box{
-    box-shadow: 0px 0px 20px 2px #e0e0e0;
+.reviews{
+    min-height: 100vh;
 }
-
-.reviews .main-box .info .img{
-    width: 50px;
-    height: 50px;
-    overflow: hidden
+.reviews .image{
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    border-radius: 50%;
 }
-
-.reviews .main-box .info .img img{
+.reviews .image img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+}
+.clients-carousel{
+    margin: 0 auto;
+}
+.single-box{
+    box-shadow: #f9f9f9 0px 0px 17px 1px;
+    margin: 20px 0
 }
 
 .reviews .me{
@@ -198,42 +207,16 @@ button{
 .reviews .me button{
     background-color: var(--main-color);
 }
-/*end reviews*/ 
 /* start footer */ 
 .footer{
-    background: linear-gradient(86deg, rgba(3, 73, 139, 0.72), rgba(91, 14, 214, 0.846) 100%);
+    background: linear-gradient(30deg, #39c0ed, #9c6bf8, #6212e9a3);
     min-height: 300px;
-}
-
-.footer input{
-    border: none !important;
-    outline: none;
-    caret-color: #6eb930;
-}
-
-.footer .icon{
-    background-color: var(--main-color);
-    cursor: pointer;
-}
-.footer .icon i{
-    transition: 0.3s ease-in-out;
-}
-.footer .icon:hover i{
-    transform: scale(1.3)
-}
-
-.footer .social i{
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    padding: 10px ;
-}
-.footer .social i:hover{
-    color: var(--main-color)
 }
 
 .footer .contact{
     position: relative;
 }
+
 .footer .contact::before{
     content: "";
     position: absolute;
@@ -250,11 +233,46 @@ button{
     cursor: pointer;
 }
 
-.contact i:hover{
-    color: var(--main-color);
-    border-color: var(--main-color)!important;
+.footer .link p{
+    cursor: pointer !important;
+    transition: 0.3s
+}
+
+.footer .link p:hover{
+    transform: scale(1.2);
+}
+
+.footer input{
+    border: none !important;
+    outline: none;
+    caret-color: #6eb930;
+}
+
+.footer .icon{
+    background: linear-gradient(30deg, #0052D4, #0ea1f6) !important;
+    cursor: pointer;
+}
+
+.footer .icon i{
+    transition: 0.3s ease-in-out;
+}
+
+.footer .icon:hover i{
+    transform: scale(1.3)
+}
+
+.footer .social i{
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 10px ;
+    color: #eaeaea!important;
+}
+
+.footer .social i:hover{
+    transform: scale(1.2);
+    color: #ffffff!important;
 }
 .copy{
-    background: linear-gradient(86deg, rgba(3, 73, 139, 0.72), rgba(91, 14, 214, 0.846) 100%);
+    background: linear-gradient(178deg, #39c0ed, #9860ff, #6212e9a3);
 }
 /* end footer */ 

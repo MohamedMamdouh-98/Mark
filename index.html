@@ -16,11 +16,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- OwlCarousel2 -->
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <title>Mrk</title>
 </head>
 <body>
-        <!-- start navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav">
             <div class="container">
             <a class="navbar-brand fs-3 fw-bold" href="#"><img src="images/logo.png" alt="" style="max-width: 100px"></a>
             <button
@@ -52,11 +55,11 @@
                     <a class="nav-link" href="#">reviews</a>
                 </li>
                 </ul>
-                <button type="button" class="btn btn-outline-light px-3 text-capitalize" data-mdb-ripple-color="dark">count my</button>
+                <button type="button" class="btn btn-outline-light px-4 text-capitalize" data-mdb-ripple-color="dark">count my</button>
             </div>
             </div>
-        </nav>
-        <!-- end navbar  -->
+    </nav>
+    <!-- end navbar  -->
     <!-- start heder -->
     <div class="header">
     <div class="title h-100 ">
@@ -132,7 +135,7 @@
     <!-- start my story -->
     <div class="story d-flex align-items-center justify-content-center text-center">
         <div class="icon-ply text-white d-flex flex-column align-items-center">
-            <div class="icon my-4 bg-white rounded-circle d-flex align-items-center justify-content-center bg-white"><i class="fa-solid fa-play fs-1"></i></div>
+            <div class="icon my-4 bg-white rounded-circle d-flex align-items-center justify-content-center bg-white"><i class="fa-solid fa-play fa-beat-fade fs-1"></i></div>
             <h2>watch my story</h2>
         </div>
     </div>
@@ -244,53 +247,62 @@
     </div>
     <!-- end portfolio -->
     <!-- start reviews --> 
-        <div class="reviews">
-            <div class="head text-center mb-5 mt-5">
-                <h2 class="mb-4">what my clients say</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,<br> laudantium.</p>
-            </div>
-            <div class="container">
+    <div class="reviews">
+        <div class="head text-center mb-5 mt-5">
+            <h2 class="mb-4">what my clients say</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,<br> laudantium.</p>
+        </div>
+        <div class="container">
+            <div class="slid mb-5">
                 <div class="row py-5">
-                    <div class="box col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
-                        <div class="main-box px-3 py-3">
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit minima aut itaque ea? Consequatur saepe animi porro molestias dolorem.</p>
-                        </div>
-                        <div class="info d-flex align-items-center">
-                            <div class="img me-3 rounded-circle"><img src="images/man1.jpg" alt=""></div>
-                            <div class="text-b">
-                                <h6>khalid ali</h6>
-                                <p>Lorem, ipsum dolor.</p>
+                    <div class="clients-carousel owl-carousel">
+                        <div class="single-box px-3 py-3 ps-4 rounded-4">
+                            <p class="fs-6 pt-2">Lorem ipsum dolor sit amet consectetur test adipisicing elit. Amet, explicabo Lorem ipsum dolor sit amet consectetur </p>
+                            <div class="content d-flex gap-3">
+                                <div class="image">
+                                    <img src="images/man1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5 class="fw-bold">mohamed ali</h5>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="box col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
-                        <div class="main-box px-3 py-3">
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit minima aut itaque ea? Consequatur saepe animi porro molestias dolorem.</p>
-                        </div>
-                        <div class="info d-flex align-items-center">
-                            <div class="img me-3 rounded-circle"><img src="images/man2.jpg" alt=""></div>
-                            <div class="text-b">
-                                <h6>khalid ali</h6>
-                                <p>Lorem, ipsum dolor.</p>
+                        <div class="single-box px-3 py-3 ps-4 rounded-4">
+                            <p class="fs-6 pt-2">Lorem ipsum dolor sit amet consectetur test adipisicing elit. Amet, explicabo Lorem ipsum dolor sit amet consectetur </p>
+                            <div class="content d-flex gap-3">
+                                <div class="image">
+                                    <img src="images/man2.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5 class="fw-bold">ahmed khalid</h5>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="box col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
-                        <div class="main-box px-3 py-3">
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit minima aut itaque ea? Consequatur saepe animi porro molestias dolorem.</p>
-                        </div>
-                        <div class="info d-flex align-items-center">
-                            <div class="img me-3 rounded-circle"><img src="images/man3.jpg" alt=""></div>
-                            <div class="text-b">
-                                <h6>khalid ali</h6>
-                                <p>Lorem, ipsum dolor.</p>
+                        <div class="single-box px-3 py-3 ps-4 rounded-4">
+                            <p class="fs-6 pt-2">Lorem ipsum dolor sit amet consectetur test adipisicing elit. Amet, explicabo Lorem ipsum dolor sit amet consectetur </p>
+                            <div class="content d-flex gap-3">
+                                <div class="image">
+                                    <img src="images/man3.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5 class="fw-bold">hany mazin</h5>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="single-box px-3 py-3 ps-4 rounded-4">
+                            <p class="fs-6 pt-2">Lorem ipsum dolor sit amet consectetur test adipisicing elit. Amet, explicabo Lorem ipsum dolor sit amet consectetur </p>
+                            <div class="content d-flex gap-3">
+                                <div class="image">
+                                    <img src="images/man2.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5 class="fw-bold">hassan ali</h5>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -311,7 +323,8 @@
                             </div>
                         </div>
                 </div>
-        </div>
+        </div> 
+    </div>
     <!-- end reviews -->
     <!-- start footer -->
     <div class="footer mt-5">
@@ -321,7 +334,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="box d-flex align-items-center">
-                                    <i class="fa-solid fa-phone border border-2 rounded-circle py-3 px-3 fs-6"></i>
+                                    <i class="fa-solid fa-phone fa-shake border border-2 rounded-circle py-3 px-3 fs-6"></i>
                                 <div class="text-contact ms-4">
                                     <p class="fw-bold">phone</p>
                                     <p>manager-( 555 ) 652 - 649</p>
@@ -361,7 +374,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-6 d-flex justify-content-center mb-3">
-                    <div class="box text-white">
+                    <div class="box text-white link">
                         <h3>services</h3>
                         <p>web design</p>
                         <p>app design</p>
@@ -371,7 +384,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-6 d-flex justify-content-center mb-3">
-                    <div class="box text-white">
+                    <div class="box text-white link">
                         <h3>support</h3>
                         <p>web design</p>
                         <p>app design</p>
@@ -406,6 +419,7 @@
         </div>
     </div>
     <!-- end copyright -->
+
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
     <!-- MDB -->
@@ -413,6 +427,9 @@
     <!-- isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <!-- owl slider box -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
     <!-- index.js-->
     <script src="js/index.js"></script>
 </body>
