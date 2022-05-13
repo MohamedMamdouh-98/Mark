@@ -2,13 +2,32 @@
     AOS.init({
         duration: 1000,
     });
-
-let nav = document.getElementById('nav');
+    /////////////
+    let up = document.getElementById('up');
+    
+    up.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        }) 
+    }
+    //////////////////
+    let btnTog = document.getElementById('btn-tog');
+    let nav = document.getElementById('nav');
+    
+    btnTog.onclick = function(){
+        btnTog.classList.toggle('fa-xmark')
+    }
 window.onscroll = function(){
     if(scrollY >= 200){
         nav.classList.add('nav')
     }else{
         nav.classList.remove('nav') 
+    }
+    if(scrollY >= 500){
+        up.classList.add('show')
+    }else{
+        up.classList.remove('show')
     }
 }
 
