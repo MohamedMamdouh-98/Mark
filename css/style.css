@@ -207,6 +207,28 @@ button{
 .reviews .me button{
     background-color: var(--main-color);
 }
+.clients-carousel .owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    text-align: center;
+    width: 100%;
+}
+
+.clients-carousel .owl-dots span{
+    width: 20px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #ddd;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+.clients-carousel .owl-dots .active span{
+    background: linear-gradient(30deg, #39c0ed, #9c6bf8, #6212e9a3);
+}
+
 /* start footer */ 
 .footer{
     background: linear-gradient(30deg, #39c0ed, #9c6bf8, #6212e9a3);
